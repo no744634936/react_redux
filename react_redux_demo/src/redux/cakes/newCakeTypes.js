@@ -1,0 +1,1 @@
+export const BUY_NEW_CAKE="buy a new  cake"
