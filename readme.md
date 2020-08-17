@@ -1,18 +1,15 @@
-输入框里输入 3 按下buy 3 cakes 按钮，15 就会变成 12
-
-使用payload 来储存用户输入的数据。
-
-redux/cakes/newCakeTypes.js
-
-redux/cakes/newCakeActions.js
-
-redux/cakes/newCakeReducer.js
-
-redux/store.js
-
-components/NewCakeContainer.js
+在 react-redux-demo文件夹里添加一个 redux-thunk 依赖包，用来做异步请求，
+npm isntall redux-thunk --save
+将redux-thunk 导入 store里面
 
 
-app.js
+
+types文件导入到 reducer 文件，然后将reducer文件
+导入到rootReducer文件
+然后将rootReducer文件导入到store文件。
+然后在component里面导入action文件
 
 
+
+如何在react项目里使用redux
+查看react-redux-demo 文件夹里的 app.js里面的几个component 和与之相关的各个文件。
