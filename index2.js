@@ -49,7 +49,7 @@ const store=redux.createStore(reducer);  //hold on application state,因为reduc
 console.log("initial state",store.getState());   //get current state
 
 //create a listener everytime the state change we log it to the console.
-const unsubscirbe=store.subscribe(()=>{
+const unsubscribe=store.subscribe(()=>{
     console.log("update state",store.getState());
 })
 
@@ -59,6 +59,6 @@ store.dispatch(buyCake())
 store.dispatch(buyIceCream())
 store.dispatch(buyIceCream())
 
-unsubscirbe();  //注销listener
+unsubscribe();  //注销listener
 
 
