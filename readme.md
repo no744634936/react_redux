@@ -54,5 +54,10 @@ app.js
 3，查看redux/store.js 里面是如何导入这两个中间件的
  在浏览其中打开console就可以看到，log了
  点击 memory   application 后面的 >> 符号，就可以看见，一个redux的debug的页面
+ 
+ 
+ //　使用redux 要用到的依赖包
+ 
+ npm install redux react-redux redux-thunk redux-devtools-extension --save
 
 
