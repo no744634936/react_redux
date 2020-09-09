@@ -31,7 +31,9 @@ import{FETCH_USER_REQUEST,
             dispatch(fetchUsersRequest())   //显示获取中
             let response=await fetch("https://jsonplaceholder.typicode.com/users")
             let users = await response.json();
-            dispatch(fetchUsersSuccess(users)) //获取数据功能并返回数据
+
+            //dispatch(fetchUsersSuccess(users)) 就是将dispatch里的action的结果给到reducer
+            dispatch(fetchUsersSuccess(users)) //获取数据功能并返回数据,返回给reducer
         }catch(error){
             dispatch(fetchUsersFailure(error.message))  //获取数据失败，返回api的error
         }
